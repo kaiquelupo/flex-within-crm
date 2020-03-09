@@ -1,0 +1,106 @@
+#flex-container {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 400px;
+    height: 800px;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+#flex-container iframe {
+    border: 2px solid #333;
+    border-radius: 20px;
+}
+
+#flex-iframe {
+    flex: 1;
+}
+
+#flex-bar {
+    position: absolute;
+    z-index: 9999;
+    bottom: 20px;
+    right: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#open-flex-bar {
+    float:left;
+    width: 70px;
+    height: 70px;
+    border-radius: 60px;
+    background-color: #7896cf;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#open-flex-bar:hover {
+    bottom: 25px;
+}
+
+#reservation-box {
+    position: relative;
+    width: 130px;
+    height: auto;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #dedede;
+    border-radius: 5px;
+    padding: 8px 15px 8px 15px;
+}
+
+#reservation-box::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    /*background-color: #dedede;*/
+    bottom: -15px;
+    right: 25px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #dedede;
+}
+
+#accept-task, #reject-task {
+    content: "";
+    position: absolute;
+    bottom:-28px;
+    left:0;
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#accept-task:hover, #reject-task:hover {
+    bottom: -24px;
+}
+
+#accept-task {
+    background-color: green;
+}
+
+#reject-task {
+    background-color: red;
+    left: 40px;
+}
+
+#close {
+    color: white;
+    font-size: 20px;
+}

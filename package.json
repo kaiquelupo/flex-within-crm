@@ -1,0 +1,31 @@
+{
+  "name": "@twilio/flex-ui-sample",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.9.5",
+    "@material-ui/icons": "^4.9.1",
+    "material-ui": "^0.20.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-iframe": "^1.8.0",
+    "react-scripts": "3.2.0",
+    "reshake": "^1.2.1",
+    "styled-components": "^5.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
